@@ -16,12 +16,13 @@ export const CreateMessageService = async (
   });
 
   const info = {
+    id: newMessage.id,
     user_id: newMessage.user_id,
     message: newMessage.message,
     create_at: newMessage.create_at,
     user: {
       name: newMessage.user.name,
-      avatatar_url: newMessage.user.avatar_url,
+      avatar_url: newMessage.user.avatar_url,
     },
   };
 
